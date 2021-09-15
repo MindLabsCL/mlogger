@@ -12,6 +12,7 @@
 #### Uso 
 > from mlogger import Logger  
 > Logger.get_instance().configure(uuid="Identificador unico", component="Nombre de la solucion", user="Nombre del usuario que ejecuta el codigo")
+> Logger.get_instance().info(module="Funcion que se ejecuta", message="Mensaje del log - opcional", action="Acción realizada - opcional")
 
 #### Revisión de los logs
 > Los logs quedan almacenados en la ruta /home/{user}/log/{uuid}. 
