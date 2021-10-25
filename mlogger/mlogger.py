@@ -159,7 +159,6 @@ class Logger(metaclass=Singleton):
         try:
             log = json.dumps(output, indent=0)
             log = "".join(log.split('\n'))
-            log = "'".join(log.split('"'))
             self.__write(log)           
         except Exception as e:
             pass
